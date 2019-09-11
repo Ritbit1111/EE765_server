@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<div>
+	<h1>Various Distribution plots</h1>
+    	{{ script | safe }}
+</div>
+<hr>
+	<h1>Assignment</h1>
+	<div>
+		<form action="" method="POST">
+			{{ form.hidden_tag() }}
+			<fieldset id="enter_here" class="">
+				<legend>Enter here</legend>
+			<div>
+				{{form.rollno}}	
+			</div>	
+			<div>
+				{{form.points}}	
+			</div>	
+			</fieldset>
+		<div>
+			{{ form.submit }}
+		</div>	
+		</form>
+	</div>
+{% endblock %}

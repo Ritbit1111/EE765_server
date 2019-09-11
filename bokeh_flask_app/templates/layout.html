@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% if  title %}	
+		<title>{{ title }}</title>
+		{% else %}
+		<title>Assignment EE765</title>
+		{% endif%}
+<link rel="stylesheet" href="//cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.css" type="text/css" />
+    <script type="text/javascript" src="//cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.js"></script>
+
+	</head>
+	<body>
+		{% block content %}{% endblock %}
+	</body>
+</html>
